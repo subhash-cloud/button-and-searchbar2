@@ -1,25 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css';import Searchicon from './assets/Searchicon.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   <>
+    <nav>
+     <button className="button">Give Feedback</button>
+    
+     <div className="input"><input type="text" className="input" placeholder="search a song of your choice"/></div>
+     <button className="image"> <img src={Searchicon} alt="somthing else"/></button>
+   
+    </nav>
+  </>
+);
 }
 
 export default App;
